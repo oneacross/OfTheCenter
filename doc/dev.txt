@@ -50,3 +50,9 @@ Tasks
 
 - the algorithm for bias should be more complicated (earlier votes
   weighted more)
+
+- improve looks of the slider bar
+
+- improve logo
+
+- add link to thumbnail
