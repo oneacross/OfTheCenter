@@ -12,16 +12,22 @@
 <% @links.each do |link| %>
     <li><div class="article">
 
-        <%= image_tag link.thumb, :class => 'thumb' %>
+        <div class="thumb-div">
+            <%= image_tag link.thumb, :class => 'thumb' %>
+        </div>
 
-        <a href="<%= link.url %>"><%= link.text %></a>
+        <div class="link-div">
+            <a href="<%= link.url %>"><%= link.text %></a>
 
-        score <%= link.score %>
+            <br />
 
-        <% form_for(link) do |f| %>
-            <%= f.range_field :bias, :min => 0, :max => 10, :step => 1 %>
-            <%= submit_tag "Vote" %>
-        <% end %>
+            score <%= link.score %>
+
+            <% form_for(link) do |f| %>
+                <%= f.range_field :bias, :min => 0, :max => 10, :step => 1 %>
+                <%= submit_tag "Vote" %>
+            <% end %>
+        </div>
 
     </div></li>
 <% end %>
