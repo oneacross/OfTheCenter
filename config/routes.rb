@@ -1,4 +1,10 @@
 Ofthecenter::Application.routes.draw do
+  resources :votes
+
+  resources :users
+
+  resources :links
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

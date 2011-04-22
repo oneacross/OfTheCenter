@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  url: MyString
+  text: MyText
+  picture: 
+  score: 1
+  bias: 1
+
+two:
+  url: MyString
+  text: MyText
+  picture: 
+  score: 1
+  bias: 1

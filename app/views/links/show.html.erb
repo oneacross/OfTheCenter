@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @link.url %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= @link.text %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @link.picture %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @link.score %>
+</p>
+
+<p>
+  <b>Bias:</b>
+  <%= @link.bias %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>

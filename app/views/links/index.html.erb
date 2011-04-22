@@ -1,0 +1,31 @@
+<h1>Listing links</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Text</th>
+    <th>Picture</th>
+    <th>Score</th>
+    <th>Bias</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @links.each do |link| %>
+  <tr>
+    <td><%= link.url %></td>
+    <td><%= link.text %></td>
+    <td><%= link.picture %></td>
+    <td><%= link.score %></td>
+    <td><%= link.bias %></td>
+    <td><%= link_to 'Show', link %></td>
+    <td><%= link_to 'Edit', edit_link_path(link) %></td>
+    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Link', new_link_path %>
