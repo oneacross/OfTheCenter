@@ -14,7 +14,16 @@ Tasks
 
 - add a vote button that updates the bias and slider
 
+    #TookLongerThanExpected
+
+    Having trouble with rails forms and the update controller action.
+    Solution was to use the HTML5 range input type.
+    It is ugly, but it works. Can probably spruce up with CSS later.
+
 - add a picture for the article (like Facebook)
+
+    Search for the first link rel="image_src" element
+    Default to the OfTheCenter logo
 
 - add users
 

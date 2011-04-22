@@ -5,12 +5,14 @@
 <h1>Of The Center</h1>
 <h2>of the people, by the people, and for the people</h2>
 
+<%= link_to 'Add Link', new_link_path %>
+
 <ul>
 
 <% @links.each do |link| %>
     <li><div class="article">
 
-        <%= link.picture %>
+        <%= image_tag link.thumb, :class => 'thumb' %>
 
         <a href="<%= link.url %>"><%= link.text %></a>
 
@@ -25,7 +27,3 @@
 <% end %>
 
 </ul>
-
-<br />
-
-<%= link_to 'New Link', new_link_path %>

@@ -1,5 +1,12 @@
-<h1>New link</h1>
+<h1>Add link</h1>
 
-<%= render 'form' %>
+<% form_for :link, :url => { :action => :create } do |f| %>
+    url: <%= f.text_field :url %> <br />
+    text: <%= f.text_field :text %> <br />
 
-<%= link_to 'Back', links_path %>
+    <%= submit_tag "Add Link" %>
+<% end %>
+
+<br />
+
+<%= link_to 'Back', root_url %>
