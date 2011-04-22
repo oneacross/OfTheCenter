@@ -1,10 +1,37 @@
-Tasks that took longer than expected
+Tasks
 
-- How to set an initial value for a jquery ui slider?
+- set the default slider values to the link's bias
 
-    Use the jquery each function to iterate over!
-    This will attach to the object!
+    #TookLongerThanExpected
 
-    Found by googling "set initial value for jquery slider"
+    #GeneralProblem: How to set an initial value for a jquery ui slider?
 
-    http://forum.jquery.com/topic/dynamic-initial-value-of-a-slider
+        Use the jquery each function to iterate over!
+        This will attach to the object!
+
+        Found by googling "set initial value for jquery slider"
+        http://forum.jquery.com/topic/dynamic-initial-value-of-a-slider
+
+- add a vote button that updates the bias and slider
+
+- add a picture for the article (like Facebook)
+
+- add users
+
+- a user can only have one vote per link
+
+- a user can view all of their submitted links
+
+- a user can see what their average vote is
+
+- the slider should have a color gradient from blue (left) to red (right)
+
+- the slider should have two sliders, one for the current bias and one for
+  the user's vote.
+
+- the algorithm for top links should be similar to hacker news or reddit
+
+- the algorithm for bias should be simple at first (average)
+
+- the algorithm for bias should be more complicated (earlier votes
+  weighted more)
