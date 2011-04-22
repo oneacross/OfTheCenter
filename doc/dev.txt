@@ -1,0 +1,10 @@
+Tasks that took longer than expected
+
+- How to set an initial value for a jquery ui slider?
+
+    Use the jquery each function to iterate over!
+    This will attach to the object!
+
+    Found by googling "set initial value for jquery slider"
+
+    http://forum.jquery.com/topic/dynamic-initial-value-of-a-slider
