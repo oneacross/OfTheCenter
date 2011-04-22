@@ -1,5 +1,18 @@
 == OfTheCenter
 
+The idea:
+
+Submit links to political articles and rate how far left or right you think the
+articles are.
+The articles that are popular and most neutral will rise to the top.
+It's like Reddit or Hacker News for politics.
+
+Articles that are popular and left leaning will rise to the top on
+left.ofthecenter.com.
+
+Articles that are popular and right leaning will rise to the top on
+right.ofthecenter.com.
+
 People involved:
     Tristan came up with the idea at the San Jose Startup Weekend.
     Matt Mendell is the developer.
