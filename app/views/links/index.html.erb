@@ -9,12 +9,22 @@
 
 <% @links.each do |link| %>
     <li><div class="article">
+
         <%= link.picture %>
+
         <a href="<%= link.url %>"><%= link.text %></a>
+
         score <%= link.score %>
+
         <div class="slider-container">
             <div class="slider" data-bias="<%= link.bias %>"></div>
         </div>
+
+        <% form_for(link) do |f| %>
+            <%= f.range_field :bias, :min => 0, :max => 10, :step => 1 %>
+            <%= submit_tag "Vote" %>
+        <% end %>
+
     </div></li>
 <% end %>
 

@@ -3,7 +3,7 @@ Ofthecenter::Application.routes.draw do
 
   resources :users
 
-  match 'links/admin_index' => 'links#admin_index'
+#  match 'links/admin_index' => 'links#admin_index'
   resources :links
 
   # The priority is based upon order of creation:

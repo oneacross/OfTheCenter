@@ -72,12 +72,18 @@ class LinksController < ApplicationController
     respond_to do |format|
       if @link.update_attributes(params[:link])
         format.html { redirect_to(@link, :notice => 'Link was successfully updated.') }
+        format.js
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @link.errors, :status => :unprocessable_entity }
       end
     end
+  end
+
+  def update_bias
+    @link = Link.find(params[:id])
+    @link.update_attribute(:bias, params[:bias])
   end
 
   # DELETE /links/1
