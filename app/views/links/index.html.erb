@@ -8,13 +8,12 @@
 <ul>
 
 <% @links.each do |link| %>
-    <li><div>
+    <li><div class="article">
         <%= link.picture %>
         <a href="<%= link.url %>"><%= link.text %></a>
         score <%= link.score %>
-        bias <%= link.bias %>
         <div class="slider-container">
-            <div class="slider"></div>
+            <div class="slider" data-bias="<%= link.bias %>"></div>
         </div>
     </div></li>
 <% end %>
