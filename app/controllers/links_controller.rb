@@ -10,6 +10,17 @@ class LinksController < ApplicationController
     end
   end
 
+  # GET /links
+  # GET /links.xml
+  def admin_index
+    @links = Link.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @links }
+    end
+  end
+
   # GET /links/1
   # GET /links/1.xml
   def show
