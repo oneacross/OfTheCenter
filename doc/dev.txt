@@ -25,6 +25,12 @@ Tasks
     Search for the first link rel="image_src" element
     Default to the OfTheCenter logo
 
+- links open up in a new tab by default
+
+    Piece of cake with jQuery, add target="_blank" to all external links
+
+    http://blog.jerodsanto.net/2009/05/jquery-open-external-links-in-new-windowtab/
+
 - add users
 
 - a user can only have one vote per link
