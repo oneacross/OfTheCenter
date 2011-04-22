@@ -1,3 +1,7 @@
+<%= stylesheet_link_tag 'jquery-ui-1.8.11.custom' %>
+<%= stylesheet_link_tag 'links' %>
+<%= javascript_include_tag 'links' %>
+
 <h1>Of The Center</h1>
 <h2>of the people, by the people, and for the people</h2>
 
@@ -9,6 +13,9 @@
         <a href="<%= link.url %>"><%= link.text %></a>
         score <%= link.score %>
         bias <%= link.bias %>
+        <div class="slider-container">
+            <div class="slider"></div>
+        </div>
     </div></li>
 <% end %>
 
