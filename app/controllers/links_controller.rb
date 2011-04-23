@@ -51,7 +51,18 @@ class LinksController < ApplicationController
   # POST /links
   # POST /links.xml
   def create
+    require 'nokogiri'
+    require 'open-uri'
+
     @link = Link.new(params[:link])
+
+    # get the picture, if it exists
+    doc = Nokogiri::HTML(open(@link.url))
+    doc.css('link').each do |link|
+        if link['rel'] == 'image_src'
+            @link.thumb = link['href']
+        end
+    end
 
     respond_to do |format|
       if @link.save
