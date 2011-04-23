@@ -1,6 +1,6 @@
 .article {
     position: relative;
-    width:500px;
+    width: 560px;
     height: 120px;
 }
 
@@ -8,12 +8,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
+    width: 150px;
     height: 100px;
 }
 
 .thumb {
-    width: 100px;
+    width: 150px;
     height: 100px;
 }
 
